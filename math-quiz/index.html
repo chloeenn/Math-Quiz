@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH QUIZ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!--FONT END-->
+</head>
+
+<body>
+    <main>
+        <!--QUIZ-->
+        <div id="start-game">
+            <h1>Math Quiz</h1>
+            <p id="startbutton">Start</p>
+        </div>
+        <div id="in-game">
+            <!-- Clock -->
+            <div id="clock">
+                <p id="timer"></p>
+            </div>
+            <!--Start-->
+            <!--Start END-->
+            <p>Questions Remaining: <span id="questions-remaining">100</span></p>
+            <!--Question Box-->
+            <div id="question-box">
+                <p id="question-text"></p>
+                <div id="answer-choices">
+                    <button class="ques"></button>
+                    <button class="ques"></button>
+                    <button class="ques"></button>
+                </div>
+            </div>
+            <!--Question Box END-->
+            <p>Current Score: <span id="curr-score">-1</span></p>
+        </div>
+        <!--END GAME-->
+        <div id="end-game">
+            <h2 id="game-over" style="display:none;">GAME OVER!</h2>
+            <p id="total-score">Your Score Was: </p>
+            <button id="play-again">Play Again</button>
+        </div>
+
+
+    </main>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
